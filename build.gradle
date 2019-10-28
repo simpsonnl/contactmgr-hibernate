@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nicksimpson'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.7.Final'
+
+
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    compile group: 'com.h2database', name: 'h2', version: '1.4.200'
+
+    // https://mvnrepository.com/artifact/javax.transaction/jta
+    compile group: 'javax.transaction', name: 'jta', version: '1.1'
+
+
+
+}
